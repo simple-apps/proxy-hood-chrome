@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Proxy Hood",
+  "description": "An HTTP proxy tool with 24 hour updates.",
+  "version": "0.0.1",
+  "icons": {
+      "24": "icons/24.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+  },
+  "background":{
+      "scripts": [
+          "vendor/jquery.min.js",
+          "vendor/moment.min.js",
+          "background.js"
+      ]
+  },
+  "browser_action": {
+    "defeult_title": "Proxy Hood",
+    "default_icon": "icons/19.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["proxy", "notifications", "storage", "http://api.proxyhood.com:81/"]
+}
