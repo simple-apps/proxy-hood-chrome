@@ -1,8 +1,7 @@
 {
   "manifest_version": 2,
-
   "name": "Proxy Hood",
-  "description": "An HTTP proxy tool with 24 hour updates.",
+  "description": "Browse under the Proxy Hood with manual or automatic mode with daily updates.",
   "version": "0.0.1",
   "icons": {
       "24": "icons/24.png",
