@@ -32,7 +32,7 @@ var isItAfterTwelve = function () {
     });
 }, prepareToUpdate = function (fn) {
     getLastUpdated(function (time) {
-        var dayUpdated = moment(time).format('D'),
+        var dayUpdated = moment(time['time_updated'], 'DD.MM.YYYY').format('D'),
             dayNow = moment.utc().add('hours', 4).format('D');
         if ($.isEmptyObject(time.time_updated) || ((dayNow > dayUpdated) && isItAfterTwelve() === true)) {
             updateProxies(fn);
