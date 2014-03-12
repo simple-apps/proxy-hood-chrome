@@ -3,7 +3,7 @@
 
 "use strict";
 var isItAfterTwelve = function () {
-    if (moment.utc().add('hours', 4).format('H') > 12) {
+    if (moment.utc().add('hours', 4).format('H') > 11) {
         return true;
     }
     return false;
